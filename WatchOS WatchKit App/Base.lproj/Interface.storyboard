@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Ident-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Ident" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchOS_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="128" height="34" alignment="left" text="Timer" textAlignment="center" id="ucg-WY-ZZj">
+                            <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="23"/>
+                        </label>
+                        <group width="1" height="80" alignment="left" id="O5t-BV-woh">
+                            <items>
+                                <button width="60" height="40" alignment="center" title="+" id="9bI-RN-dDB">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="24"/>
+                                    <connections>
+                                        <action selector="aumenta" destination="AgC-eL-Hgc" id="7yS-k8-JF6"/>
+                                    </connections>
+                                </button>
+                                <button width="60" height="40" alignment="center" title="-" id="VOF-dy-zxG">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="24"/>
+                                    <connections>
+                                        <action selector="diminui" destination="AgC-eL-Hgc" id="a2x-77-PZU"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="22" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="contador" destination="ucg-WY-ZZj" id="nRE-vD-HFl"/>
+                        <outlet property="mais" destination="VOF-dy-zxG" id="p2k-zk-SFL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="25" y="29"/>
+        </scene>
+    </scenes>
+</document>
